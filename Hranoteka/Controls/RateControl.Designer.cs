@@ -142,13 +142,13 @@
             txtComment.Multiline = true;
             txtComment.Name = "txtComment";
             txtComment.ScrollBars = ScrollBars.Vertical;
-            txtComment.Size = new Size(715, 147);
+            txtComment.Size = new Size(646, 147);
             txtComment.TabIndex = 33;
             // 
             // RateControl
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Controls.Add(rad2);
             Controls.Add(rad3);
             Controls.Add(label27);
@@ -159,7 +159,7 @@
             Controls.Add(rad1);
             Controls.Add(label26);
             Name = "RateControl";
-            Size = new Size(760, 400);
+            Size = new Size(691, 400);
             ResumeLayout(false);
             PerformLayout();
         }

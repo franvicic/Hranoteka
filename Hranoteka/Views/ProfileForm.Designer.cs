@@ -54,10 +54,9 @@
             // label5
             // 
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(410, 30);
-            label5.Margin = new Padding(7, 0, 7, 0);
+            label5.Location = new Point(169, 11);
             label5.Name = "label5";
-            label5.Size = new Size(1268, 79);
+            label5.Size = new Size(522, 29);
             label5.TabIndex = 39;
             label5.Text = "Moj profil";
             label5.TextAlign = ContentAlignment.MiddleCenter;
@@ -65,90 +64,86 @@
             // txtCountry
             // 
             txtCountry.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCountry.Location = new Point(437, 727);
-            txtCountry.Margin = new Padding(7, 5, 7, 5);
+            txtCountry.Location = new Point(180, 266);
+            txtCountry.Margin = new Padding(3, 2, 3, 2);
             txtCountry.Name = "txtCountry";
-            txtCountry.Size = new Size(1221, 61);
+            txtCountry.Size = new Size(505, 29);
             txtCountry.TabIndex = 38;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(437, 653);
-            label4.Margin = new Padding(7, 0, 7, 0);
+            label4.Location = new Point(180, 239);
             label4.Name = "label4";
-            label4.Size = new Size(151, 54);
+            label4.Size = new Size(61, 21);
             label4.TabIndex = 37;
             label4.Text = "Država:";
             // 
             // txtLastName
             // 
             txtLastName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLastName.Location = new Point(437, 563);
-            txtLastName.Margin = new Padding(7, 5, 7, 5);
+            txtLastName.Location = new Point(180, 206);
+            txtLastName.Margin = new Padding(3, 2, 3, 2);
             txtLastName.Name = "txtLastName";
-            txtLastName.Size = new Size(1221, 61);
+            txtLastName.Size = new Size(505, 29);
             txtLastName.TabIndex = 36;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(437, 489);
-            label3.Margin = new Padding(7, 0, 7, 0);
+            label3.Location = new Point(180, 179);
             label3.Name = "label3";
-            label3.Size = new Size(172, 54);
+            label3.Size = new Size(69, 21);
             label3.TabIndex = 35;
             label3.Text = "Prezime:";
             // 
             // txtFirstName
             // 
             txtFirstName.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFirstName.Location = new Point(437, 396);
-            txtFirstName.Margin = new Padding(7, 5, 7, 5);
+            txtFirstName.Location = new Point(180, 145);
+            txtFirstName.Margin = new Padding(3, 2, 3, 2);
             txtFirstName.Name = "txtFirstName";
-            txtFirstName.Size = new Size(1221, 61);
+            txtFirstName.Size = new Size(505, 29);
             txtFirstName.TabIndex = 34;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(437, 323);
-            label1.Margin = new Padding(7, 0, 7, 0);
+            label1.Location = new Point(180, 118);
             label1.Name = "label1";
-            label1.Size = new Size(98, 54);
+            label1.Size = new Size(39, 21);
             label1.TabIndex = 33;
             label1.Text = "Ime:";
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(437, 232);
-            txtUsername.Margin = new Padding(7, 5, 7, 5);
+            txtUsername.Location = new Point(180, 85);
+            txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(1221, 61);
+            txtUsername.Size = new Size(505, 29);
             txtUsername.TabIndex = 32;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(437, 159);
-            label2.Margin = new Padding(7, 0, 7, 0);
+            label2.Location = new Point(180, 58);
             label2.Name = "label2";
-            label2.Size = new Size(554, 54);
+            label2.Size = new Size(221, 21);
             label2.TabIndex = 31;
             label2.Text = "Korisničko ime (javno vidljivo):";
             // 
             // picProfile
             // 
             picProfile.BackColor = Color.FromArgb(192, 192, 0);
-            picProfile.Location = new Point(29, 30);
-            picProfile.Margin = new Padding(7, 5, 7, 5);
+            picProfile.Location = new Point(12, 11);
+            picProfile.Margin = new Padding(3, 2, 3, 2);
             picProfile.Name = "picProfile";
-            picProfile.Size = new Size(367, 336);
+            picProfile.Size = new Size(151, 123);
             picProfile.SizeMode = PictureBoxSizeMode.StretchImage;
             picProfile.TabIndex = 30;
             picProfile.TabStop = false;
@@ -158,10 +153,10 @@
             btnChangePicture.BackColor = Color.DodgerBlue;
             btnChangePicture.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnChangePicture.ForeColor = Color.White;
-            btnChangePicture.Location = new Point(29, 377);
-            btnChangePicture.Margin = new Padding(7, 5, 7, 5);
+            btnChangePicture.Location = new Point(12, 138);
+            btnChangePicture.Margin = new Padding(3, 2, 3, 2);
             btnChangePicture.Name = "btnChangePicture";
-            btnChangePicture.Size = new Size(367, 104);
+            btnChangePicture.Size = new Size(151, 38);
             btnChangePicture.TabIndex = 41;
             btnChangePicture.Text = "Izmijeni sliku";
             btnChangePicture.UseVisualStyleBackColor = false;
@@ -171,10 +166,10 @@
             btnSaveProfile.BackColor = Color.DodgerBlue;
             btnSaveProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSaveProfile.ForeColor = Color.White;
-            btnSaveProfile.Location = new Point(1297, 850);
-            btnSaveProfile.Margin = new Padding(7, 5, 7, 5);
+            btnSaveProfile.Location = new Point(534, 311);
+            btnSaveProfile.Margin = new Padding(3, 2, 3, 2);
             btnSaveProfile.Name = "btnSaveProfile";
-            btnSaveProfile.Size = new Size(367, 104);
+            btnSaveProfile.Size = new Size(151, 38);
             btnSaveProfile.TabIndex = 42;
             btnSaveProfile.Text = "Spremi";
             btnSaveProfile.UseVisualStyleBackColor = false;
@@ -183,10 +178,9 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(29, 957);
-            label6.Margin = new Padding(7, 0, 7, 0);
+            label6.Location = new Point(12, 350);
             label6.Name = "label6";
-            label6.Size = new Size(264, 54);
+            label6.Size = new Size(108, 21);
             label6.TabIndex = 43;
             label6.Text = "Izmjena šifre";
             // 
@@ -194,62 +188,59 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(29, 1052);
-            label7.Margin = new Padding(7, 0, 7, 0);
+            label7.Location = new Point(12, 385);
             label7.Name = "label7";
-            label7.Size = new Size(273, 54);
+            label7.Size = new Size(108, 21);
             label7.TabIndex = 44;
             label7.Text = "Trenutna šifra:";
             // 
             // txtCurrentPassword
             // 
             txtCurrentPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCurrentPassword.Location = new Point(29, 1115);
-            txtCurrentPassword.Margin = new Padding(7, 5, 7, 5);
+            txtCurrentPassword.Location = new Point(12, 408);
+            txtCurrentPassword.Margin = new Padding(3, 2, 3, 2);
             txtCurrentPassword.Name = "txtCurrentPassword";
             txtCurrentPassword.PasswordChar = '*';
-            txtCurrentPassword.Size = new Size(504, 61);
+            txtCurrentPassword.Size = new Size(210, 29);
             txtCurrentPassword.TabIndex = 45;
             // 
             // txtNewPassword
             // 
             txtNewPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNewPassword.Location = new Point(590, 1115);
-            txtNewPassword.Margin = new Padding(7, 5, 7, 5);
+            txtNewPassword.Location = new Point(243, 408);
+            txtNewPassword.Margin = new Padding(3, 2, 3, 2);
             txtNewPassword.Name = "txtNewPassword";
             txtNewPassword.PasswordChar = '*';
-            txtNewPassword.Size = new Size(504, 61);
+            txtNewPassword.Size = new Size(210, 29);
             txtNewPassword.TabIndex = 47;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(590, 1052);
-            label8.Margin = new Padding(7, 0, 7, 0);
+            label8.Location = new Point(243, 385);
             label8.Name = "label8";
-            label8.Size = new Size(209, 54);
+            label8.Size = new Size(84, 21);
             label8.TabIndex = 46;
             label8.Text = "Nova šifra:";
             // 
             // txtNewPasswordRepeat
             // 
             txtNewPasswordRepeat.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNewPasswordRepeat.Location = new Point(1154, 1115);
-            txtNewPasswordRepeat.Margin = new Padding(7, 5, 7, 5);
+            txtNewPasswordRepeat.Location = new Point(475, 408);
+            txtNewPasswordRepeat.Margin = new Padding(3, 2, 3, 2);
             txtNewPasswordRepeat.Name = "txtNewPasswordRepeat";
             txtNewPasswordRepeat.PasswordChar = '*';
-            txtNewPasswordRepeat.Size = new Size(504, 61);
+            txtNewPasswordRepeat.Size = new Size(210, 29);
             txtNewPasswordRepeat.TabIndex = 49;
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(1154, 1052);
-            label9.Margin = new Padding(7, 0, 7, 0);
+            label9.Location = new Point(475, 385);
             label9.Name = "label9";
-            label9.Size = new Size(338, 54);
+            label9.Size = new Size(134, 21);
             label9.TabIndex = 48;
             label9.Text = "Ponovi novu šifru:";
             // 
@@ -258,19 +249,19 @@
             btnChangePassword.BackColor = Color.DodgerBlue;
             btnChangePassword.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnChangePassword.ForeColor = Color.White;
-            btnChangePassword.Location = new Point(1297, 1249);
-            btnChangePassword.Margin = new Padding(7, 5, 7, 5);
+            btnChangePassword.Location = new Point(534, 457);
+            btnChangePassword.Margin = new Padding(3, 2, 3, 2);
             btnChangePassword.Name = "btnChangePassword";
-            btnChangePassword.Size = new Size(367, 104);
+            btnChangePassword.Size = new Size(151, 38);
             btnChangePassword.TabIndex = 50;
             btnChangePassword.Text = "Izmijeni šifru";
             btnChangePassword.UseVisualStyleBackColor = false;
             // 
             // ProfileForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1712, 1383);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(705, 506);
             Controls.Add(btnChangePassword);
             Controls.Add(txtNewPasswordRepeat);
             Controls.Add(label9);
@@ -292,7 +283,6 @@
             Controls.Add(label2);
             Controls.Add(picProfile);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(7, 8, 7, 8);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "ProfileForm";

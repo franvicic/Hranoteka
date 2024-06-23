@@ -36,8 +36,21 @@ public partial class RecipesListItemControl : UserControl
 
     public string ImagePath
     {
-        get => picRecipe.ImageLocation;
-        set => picRecipe.ImageLocation = value;
+        get { return picRecipe.ImageLocation; }
+        set
+        {
+            string imagePath = value != null 
+                ? Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images", value) 
+                : null;
+            if (imagePath != null && File.Exists(imagePath))
+            {
+                picRecipe.ImageLocation = imagePath;
+            }
+            else
+            {
+                picRecipe.Image = Properties.Resources.undefined_recipe;
+            }
+        }
     }
 
 

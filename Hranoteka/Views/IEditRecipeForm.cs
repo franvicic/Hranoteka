@@ -5,6 +5,9 @@ namespace Hranoteka.Views;
 
 public interface IEditRecipeForm : IForm
 {
+    event EventHandler SaveRecipeEvent;
+    event EventHandler<RecipeEventArgs> LoadImageEvent;
+
     int RecipeId { get; set; }
     string Title { get; set; }
     string RecipeName { get; set; }
@@ -21,7 +24,7 @@ public interface IEditRecipeForm : IForm
     void SetDetailsPageForEditing();
     void SetDetailsPageForAdding();
 
-    event EventHandler SaveRecipeEvent;
-    event EventHandler<RecipeEventArgs> LoadImageEvent;
-
+    DialogResult ShowOpenFileDialog();
+    string SelectedFilePath { get; }
+    FileInfo CreateFileInfo(string fileName);
 }

@@ -44,50 +44,58 @@
             tabPageRate = new TabPage();
             rate = new Controls.RateControl();
             btnEditMyRecipe = new Button();
+            splitContainer1 = new SplitContainer();
+            splitContainer2 = new SplitContainer();
             ((System.ComponentModel.ISupportInitialize)picRecipe).BeginInit();
             tabDetails.SuspendLayout();
             tabPageDetails.SuspendLayout();
             tabPageComments.SuspendLayout();
             tabPageRate.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).BeginInit();
+            splitContainer1.Panel1.SuspendLayout();
+            splitContainer1.Panel2.SuspendLayout();
+            splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).BeginInit();
+            splitContainer2.Panel1.SuspendLayout();
+            splitContainer2.Panel2.SuspendLayout();
+            splitContainer2.SuspendLayout();
             SuspendLayout();
             // 
             // txtRating
             // 
             txtRating.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRating.Location = new Point(29, 804);
-            txtRating.Margin = new Padding(7, 5, 7, 5);
+            txtRating.Location = new Point(15, 253);
+            txtRating.Margin = new Padding(3, 2, 3, 2);
             txtRating.Name = "txtRating";
             txtRating.ReadOnly = true;
-            txtRating.Size = new Size(327, 53);
+            txtRating.Size = new Size(137, 26);
             txtRating.TabIndex = 30;
             // 
             // label4
             // 
             label4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(29, 754);
-            label4.Margin = new Padding(7, 0, 7, 0);
+            label4.Location = new Point(15, 236);
             label4.Name = "label4";
-            label4.Size = new Size(296, 68);
+            label4.Size = new Size(122, 25);
             label4.TabIndex = 29;
             label4.Text = "Prosječna ocjena:";
             // 
             // txtTotalCalories
             // 
             txtTotalCalories.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtTotalCalories.Location = new Point(29, 656);
-            txtTotalCalories.Margin = new Padding(7, 5, 7, 5);
+            txtTotalCalories.Location = new Point(15, 193);
+            txtTotalCalories.Margin = new Padding(3, 2, 3, 2);
             txtTotalCalories.Name = "txtTotalCalories";
             txtTotalCalories.ReadOnly = true;
-            txtTotalCalories.Size = new Size(327, 53);
+            txtTotalCalories.Size = new Size(137, 26);
             txtTotalCalories.TabIndex = 28;
             // 
             // lblCategory
             // 
             lblCategory.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCategory.Location = new Point(29, 530);
-            lblCategory.Margin = new Padding(7, 0, 7, 0);
+            lblCategory.Location = new Point(15, 130);
             lblCategory.Name = "lblCategory";
-            lblCategory.Size = new Size(333, 68);
+            lblCategory.Size = new Size(137, 25);
             lblCategory.TabIndex = 27;
             lblCategory.Text = "Kategorija";
             // 
@@ -95,10 +103,10 @@
             // 
             picRecipe.BackColor = Color.FromArgb(192, 192, 0);
             picRecipe.Image = (Image)resources.GetObject("picRecipe.Image");
-            picRecipe.Location = new Point(29, 175);
-            picRecipe.Margin = new Padding(7, 5, 7, 5);
+            picRecipe.Location = new Point(15, 11);
+            picRecipe.Margin = new Padding(3, 2, 3, 2);
             picRecipe.Name = "picRecipe";
-            picRecipe.Size = new Size(333, 320);
+            picRecipe.Size = new Size(137, 117);
             picRecipe.SizeMode = PictureBoxSizeMode.StretchImage;
             picRecipe.TabIndex = 26;
             picRecipe.TabStop = false;
@@ -106,103 +114,92 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(29, 599);
-            label2.Margin = new Padding(7, 0, 7, 0);
+            label2.Location = new Point(15, 166);
             label2.Name = "label2";
-            label2.Size = new Size(296, 68);
+            label2.Size = new Size(122, 25);
             label2.TabIndex = 25;
             label2.Text = "Ukupno kalorija:";
             // 
             // lblTitle
             // 
-            lblTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            lblTitle.Dock = DockStyle.Top;
             lblTitle.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTitle.Location = new Point(376, 25);
-            lblTitle.Margin = new Padding(7, 0, 7, 0);
+            lblTitle.Location = new Point(0, 0);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(1732, 98);
+            lblTitle.Size = new Size(709, 36);
             lblTitle.TabIndex = 32;
             lblTitle.Text = "Pizza (vege) by Vicko";
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // tabDetails
             // 
-            tabDetails.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabDetails.Controls.Add(tabPageDetails);
             tabDetails.Controls.Add(tabPageComments);
             tabDetails.Controls.Add(tabPageRate);
-            tabDetails.Location = new Point(376, 175);
-            tabDetails.Margin = new Padding(7, 8, 7, 8);
+            tabDetails.Dock = DockStyle.Fill;
+            tabDetails.Location = new Point(0, 0);
             tabDetails.Name = "tabDetails";
             tabDetails.SelectedIndex = 0;
-            tabDetails.Size = new Size(1741, 1353);
+            tabDetails.Size = new Size(709, 473);
             tabDetails.TabIndex = 33;
             // 
             // tabPageDetails
             // 
             tabPageDetails.BackColor = Color.FromArgb(255, 224, 192);
             tabPageDetails.Controls.Add(recipeDetails);
-            tabPageDetails.Location = new Point(10, 58);
-            tabPageDetails.Margin = new Padding(7, 8, 7, 8);
+            tabPageDetails.Location = new Point(4, 24);
             tabPageDetails.Name = "tabPageDetails";
-            tabPageDetails.Padding = new Padding(7, 8, 7, 8);
-            tabPageDetails.Size = new Size(1721, 1285);
+            tabPageDetails.Padding = new Padding(3);
+            tabPageDetails.Size = new Size(701, 445);
             tabPageDetails.TabIndex = 0;
             tabPageDetails.Text = "Detalji";
             // 
             // recipeDetails
             // 
             recipeDetails.Alergens = "";
-            recipeDetails.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             recipeDetails.Description = "";
             recipeDetails.Ingredients = "";
-            recipeDetails.Location = new Point(14, 16);
-            recipeDetails.Margin = new Padding(7, 8, 7, 8);
+            recipeDetails.Location = new Point(3, 3);
             recipeDetails.Name = "recipeDetails";
-            recipeDetails.Size = new Size(1693, 1253);
+            recipeDetails.Size = new Size(695, 436);
             recipeDetails.TabIndex = 0;
             // 
             // tabPageComments
             // 
             tabPageComments.BackColor = Color.FromArgb(255, 224, 192);
             tabPageComments.Controls.Add(commentsList);
-            tabPageComments.Location = new Point(10, 58);
-            tabPageComments.Margin = new Padding(7, 8, 7, 8);
+            tabPageComments.Location = new Point(4, 24);
             tabPageComments.Name = "tabPageComments";
-            tabPageComments.Padding = new Padding(7, 8, 7, 8);
-            tabPageComments.Size = new Size(1721, 1285);
+            tabPageComments.Padding = new Padding(3);
+            tabPageComments.Size = new Size(701, 445);
             tabPageComments.TabIndex = 1;
             tabPageComments.Text = "Komentari i ocjene";
             // 
             // commentsList
             // 
-            commentsList.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            commentsList.Location = new Point(14, 16);
-            commentsList.Margin = new Padding(7, 8, 7, 8);
+            commentsList.Location = new Point(3, 3);
             commentsList.Name = "commentsList";
-            commentsList.Size = new Size(1693, 1253);
+            commentsList.Size = new Size(695, 442);
             commentsList.TabIndex = 0;
             // 
             // tabPageRate
             // 
             tabPageRate.BackColor = Color.FromArgb(255, 224, 192);
             tabPageRate.Controls.Add(rate);
-            tabPageRate.Location = new Point(10, 58);
-            tabPageRate.Margin = new Padding(7, 8, 7, 8);
+            tabPageRate.Location = new Point(4, 24);
             tabPageRate.Name = "tabPageRate";
-            tabPageRate.Size = new Size(1721, 1285);
+            tabPageRate.Size = new Size(701, 445);
             tabPageRate.TabIndex = 2;
             tabPageRate.Text = "Ocijeni";
             // 
             // rate
             // 
-            rate.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             rate.Comment = "";
-            rate.Location = new Point(24, 27);
-            rate.Margin = new Padding(17, 22, 17, 22);
+            rate.Location = new Point(0, 0);
+            rate.Margin = new Padding(7, 8, 7, 8);
             rate.Name = "rate";
             rate.Rating = 0;
-            rate.Size = new Size(1671, 1233);
+            rate.Size = new Size(698, 441);
             rate.TabIndex = 0;
             // 
             // btnEditMyRecipe
@@ -211,30 +208,64 @@
             btnEditMyRecipe.BackColor = Color.DodgerBlue;
             btnEditMyRecipe.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnEditMyRecipe.ForeColor = Color.White;
-            btnEditMyRecipe.Location = new Point(1751, 93);
-            btnEditMyRecipe.Margin = new Padding(7, 5, 7, 5);
+            btnEditMyRecipe.Location = new Point(546, 36);
+            btnEditMyRecipe.Margin = new Padding(3, 2, 3, 2);
             btnEditMyRecipe.Name = "btnEditMyRecipe";
-            btnEditMyRecipe.Size = new Size(367, 104);
+            btnEditMyRecipe.Size = new Size(151, 38);
             btnEditMyRecipe.TabIndex = 34;
             btnEditMyRecipe.Text = "Izmijeni";
             btnEditMyRecipe.UseVisualStyleBackColor = false;
             // 
+            // splitContainer1
+            // 
+            splitContainer1.Dock = DockStyle.Fill;
+            splitContainer1.IsSplitterFixed = true;
+            splitContainer1.Location = new Point(0, 0);
+            splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            splitContainer1.Panel1.Controls.Add(picRecipe);
+            splitContainer1.Panel1.Controls.Add(label2);
+            splitContainer1.Panel1.Controls.Add(lblCategory);
+            splitContainer1.Panel1.Controls.Add(txtTotalCalories);
+            splitContainer1.Panel1.Controls.Add(txtRating);
+            splitContainer1.Panel1.Controls.Add(label4);
+            // 
+            // splitContainer1.Panel2
+            // 
+            splitContainer1.Panel2.Controls.Add(splitContainer2);
+            splitContainer1.Size = new Size(884, 558);
+            splitContainer1.SplitterDistance = 171;
+            splitContainer1.TabIndex = 35;
+            // 
+            // splitContainer2
+            // 
+            splitContainer2.Dock = DockStyle.Fill;
+            splitContainer2.IsSplitterFixed = true;
+            splitContainer2.Location = new Point(0, 0);
+            splitContainer2.Name = "splitContainer2";
+            splitContainer2.Orientation = Orientation.Horizontal;
+            // 
+            // splitContainer2.Panel1
+            // 
+            splitContainer2.Panel1.Controls.Add(btnEditMyRecipe);
+            splitContainer2.Panel1.Controls.Add(lblTitle);
+            // 
+            // splitContainer2.Panel2
+            // 
+            splitContainer2.Panel2.Controls.Add(tabDetails);
+            splitContainer2.Size = new Size(709, 558);
+            splitContainer2.SplitterDistance = 81;
+            splitContainer2.TabIndex = 0;
+            // 
             // RecipeDetailsForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2147, 1533);
-            Controls.Add(btnEditMyRecipe);
-            Controls.Add(tabDetails);
-            Controls.Add(lblTitle);
-            Controls.Add(txtRating);
-            Controls.Add(label4);
-            Controls.Add(txtTotalCalories);
-            Controls.Add(lblCategory);
-            Controls.Add(picRecipe);
-            Controls.Add(label2);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(884, 558);
+            Controls.Add(splitContainer1);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(7, 8, 7, 8);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "RecipeDetailsForm";
@@ -245,8 +276,16 @@
             tabPageDetails.ResumeLayout(false);
             tabPageComments.ResumeLayout(false);
             tabPageRate.ResumeLayout(false);
+            splitContainer1.Panel1.ResumeLayout(false);
+            splitContainer1.Panel1.PerformLayout();
+            splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();
+            splitContainer1.ResumeLayout(false);
+            splitContainer2.Panel1.ResumeLayout(false);
+            splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)splitContainer2).EndInit();
+            splitContainer2.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -265,5 +304,7 @@
         private Button btnEditMyRecipe;
         private Controls.RecipeDetailsControl recipeDetails;
         private Controls.CommentsListControl commentsList;
+        private SplitContainer splitContainer1;
+        private SplitContainer splitContainer2;
     }
 }

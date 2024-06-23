@@ -43,76 +43,72 @@
             // 
             // tabs
             // 
-            tabs.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             tabs.Controls.Add(tabPageTemplate1);
             tabs.Controls.Add(tabPageTemplate2);
-            tabs.Location = new Point(24, 137);
-            tabs.Margin = new Padding(7, 8, 7, 8);
+            tabs.Location = new Point(10, 50);
             tabs.Name = "tabs";
             tabs.SelectedIndex = 0;
-            tabs.Size = new Size(2093, 1279);
+            tabs.Size = new Size(862, 464);
             tabs.TabIndex = 0;
             // 
             // tabPageTemplate1
             // 
             tabPageTemplate1.BackColor = Color.FromArgb(255, 224, 192);
             tabPageTemplate1.Controls.Add(recipeTemplate1);
-            tabPageTemplate1.Location = new Point(10, 58);
-            tabPageTemplate1.Margin = new Padding(7, 8, 7, 8);
+            tabPageTemplate1.Location = new Point(4, 24);
             tabPageTemplate1.Name = "tabPageTemplate1";
-            tabPageTemplate1.Padding = new Padding(7, 8, 7, 8);
-            tabPageTemplate1.Size = new Size(2073, 1211);
+            tabPageTemplate1.Padding = new Padding(3);
+            tabPageTemplate1.Size = new Size(854, 436);
             tabPageTemplate1.TabIndex = 0;
             tabPageTemplate1.Text = "Predložak 1";
             // 
             // recipeTemplate1
             // 
             recipeTemplate1.Alergens = "";
-            recipeTemplate1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             recipeTemplate1.Description = "";
             recipeTemplate1.ImagePath = null;
             recipeTemplate1.Kcal = new decimal(new int[] { 0, 0, 0, 0 });
-            recipeTemplate1.Location = new Point(14, 16);
-            recipeTemplate1.Margin = new Padding(7, 8, 7, 8);
+            recipeTemplate1.Location = new Point(6, 6);
             recipeTemplate1.Name = "recipeTemplate1";
+            recipeTemplate1.RecipeId = 0;
             recipeTemplate1.RecipeName = "";
-            recipeTemplate1.Size = new Size(2045, 1164);
+            recipeTemplate1.SelectedCategory = null;
+            recipeTemplate1.Size = new Size(842, 422);
             recipeTemplate1.TabIndex = 0;
             // 
             // tabPageTemplate2
             // 
             tabPageTemplate2.BackColor = Color.FromArgb(255, 224, 192);
             tabPageTemplate2.Controls.Add(recipeTemplate2);
-            tabPageTemplate2.Location = new Point(10, 58);
-            tabPageTemplate2.Margin = new Padding(7, 8, 7, 8);
+            tabPageTemplate2.Location = new Point(4, 24);
             tabPageTemplate2.Name = "tabPageTemplate2";
-            tabPageTemplate2.Padding = new Padding(7, 8, 7, 8);
-            tabPageTemplate2.Size = new Size(2073, 1211);
+            tabPageTemplate2.Padding = new Padding(3);
+            tabPageTemplate2.Size = new Size(854, 436);
             tabPageTemplate2.TabIndex = 1;
             tabPageTemplate2.Text = "Predložak 2";
             // 
             // recipeTemplate2
             // 
             recipeTemplate2.Alergens = "";
-            recipeTemplate2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             recipeTemplate2.Description = "";
             recipeTemplate2.ImagePath = null;
             recipeTemplate2.Kcal = new decimal(new int[] { 0, 0, 0, 0 });
-            recipeTemplate2.Location = new Point(15, 16);
-            recipeTemplate2.Margin = new Padding(17, 22, 17, 22);
+            recipeTemplate2.Location = new Point(6, 6);
+            recipeTemplate2.Margin = new Padding(7, 8, 7, 8);
             recipeTemplate2.Name = "recipeTemplate2";
+            recipeTemplate2.RecipeId = 0;
             recipeTemplate2.RecipeName = "";
-            recipeTemplate2.Size = new Size(2045, 1170);
+            recipeTemplate2.SelectedCategory = null;
+            recipeTemplate2.Size = new Size(842, 419);
             recipeTemplate2.TabIndex = 0;
             // 
             // lblEditRecipeTitle
             // 
             lblEditRecipeTitle.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             lblEditRecipeTitle.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEditRecipeTitle.Location = new Point(34, 25);
-            lblEditRecipeTitle.Margin = new Padding(7, 0, 7, 0);
+            lblEditRecipeTitle.Location = new Point(14, 9);
             lblEditRecipeTitle.Name = "lblEditRecipeTitle";
-            lblEditRecipeTitle.Size = new Size(2074, 68);
+            lblEditRecipeTitle.Size = new Size(854, 25);
             lblEditRecipeTitle.TabIndex = 25;
             lblEditRecipeTitle.Text = "Novi recept";
             lblEditRecipeTitle.TextAlign = ContentAlignment.MiddleCenter;
@@ -122,23 +118,22 @@
             btnSaveRecipe.BackColor = Color.DodgerBlue;
             btnSaveRecipe.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSaveRecipe.ForeColor = Color.White;
-            btnSaveRecipe.Location = new Point(908, 1430);
-            btnSaveRecipe.Margin = new Padding(7, 5, 7, 5);
+            btnSaveRecipe.Location = new Point(358, 525);
+            btnSaveRecipe.Margin = new Padding(3, 2, 3, 2);
             btnSaveRecipe.Name = "btnSaveRecipe";
-            btnSaveRecipe.Size = new Size(338, 82);
+            btnSaveRecipe.Size = new Size(139, 30);
             btnSaveRecipe.TabIndex = 31;
             btnSaveRecipe.Text = "Snimi";
             btnSaveRecipe.UseVisualStyleBackColor = false;
             // 
             // EditRecipeForm
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2147, 1533);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(884, 566);
             Controls.Add(btnSaveRecipe);
             Controls.Add(lblEditRecipeTitle);
             Controls.Add(tabs);
-            Margin = new Padding(7, 8, 7, 8);
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "EditRecipeForm";

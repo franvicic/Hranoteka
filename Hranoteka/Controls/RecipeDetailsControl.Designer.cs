@@ -34,107 +34,118 @@
             txtDescription = new TextBox();
             txtIngredients = new TextBox();
             label6 = new Label();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // txtAlergens
             // 
-            txtAlergens.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtAlergens.BackColor = SystemColors.Window;
             txtAlergens.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAlergens.Location = new Point(0, 806);
-            txtAlergens.Margin = new Padding(7, 5, 7, 5);
+            txtAlergens.Location = new Point(3, 294);
+            txtAlergens.Margin = new Padding(3, 2, 3, 2);
             txtAlergens.Multiline = true;
             txtAlergens.Name = "txtAlergens";
             txtAlergens.ReadOnly = true;
             txtAlergens.ScrollBars = ScrollBars.Vertical;
-            txtAlergens.Size = new Size(1833, 266);
+            txtAlergens.Size = new Size(757, 100);
             txtAlergens.TabIndex = 29;
             // 
             // label5
             // 
-            label5.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label5.BackColor = Color.Blue;
             label5.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(0, 0);
-            label5.Margin = new Padding(7, 0, 7, 0);
+            label5.Location = new Point(3, 0);
             label5.Name = "label5";
-            label5.Size = new Size(1838, 79);
+            label5.Size = new Size(757, 29);
             label5.TabIndex = 24;
             label5.Text = "Priprema";
             label5.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label7
             // 
-            label7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label7.BackColor = Color.Blue;
             label7.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.White;
-            label7.Location = new Point(0, 722);
-            label7.Margin = new Padding(7, 0, 7, 0);
+            label7.Location = new Point(3, 262);
             label7.Name = "label7";
-            label7.Size = new Size(1838, 79);
+            label7.Size = new Size(757, 29);
             label7.TabIndex = 28;
             label7.Text = "Alergeni";
             label7.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // txtDescription
             // 
-            txtDescription.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtDescription.BackColor = SystemColors.Window;
             txtDescription.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtDescription.Location = new Point(0, 85);
-            txtDescription.Margin = new Padding(7, 5, 7, 5);
+            txtDescription.Location = new Point(3, 32);
+            txtDescription.Margin = new Padding(3, 2, 3, 2);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
             txtDescription.ReadOnly = true;
             txtDescription.ScrollBars = ScrollBars.Vertical;
-            txtDescription.Size = new Size(1833, 266);
+            txtDescription.Size = new Size(757, 96);
             txtDescription.TabIndex = 25;
             // 
             // txtIngredients
             // 
-            txtIngredients.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtIngredients.BackColor = SystemColors.Window;
             txtIngredients.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtIngredients.Location = new Point(0, 448);
-            txtIngredients.Margin = new Padding(7, 5, 7, 5);
+            txtIngredients.Location = new Point(3, 162);
+            txtIngredients.Margin = new Padding(3, 2, 3, 2);
             txtIngredients.Multiline = true;
             txtIngredients.Name = "txtIngredients";
             txtIngredients.ReadOnly = true;
             txtIngredients.ScrollBars = ScrollBars.Vertical;
-            txtIngredients.Size = new Size(1833, 261);
+            txtIngredients.Size = new Size(757, 98);
             txtIngredients.TabIndex = 27;
             // 
             // label6
             // 
-            label6.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label6.BackColor = Color.Blue;
             label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(0, 364);
-            label6.Margin = new Padding(7, 0, 7, 0);
+            label6.Location = new Point(3, 130);
             label6.Name = "label6";
-            label6.Size = new Size(1838, 79);
+            label6.Size = new Size(757, 29);
             label6.TabIndex = 26;
             label6.Text = "Namirnice";
             label6.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle());
+            tableLayoutPanel1.Controls.Add(txtAlergens, 0, 5);
+            tableLayoutPanel1.Controls.Add(label7, 0, 4);
+            tableLayoutPanel1.Controls.Add(txtIngredients, 0, 3);
+            tableLayoutPanel1.Controls.Add(label6, 0, 2);
+            tableLayoutPanel1.Controls.Add(txtDescription, 0, 1);
+            tableLayoutPanel1.Controls.Add(label5, 0, 0);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(0, 0);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 6;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 30F));
+            tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
+            tableLayoutPanel1.Size = new Size(800, 400);
+            tableLayoutPanel1.TabIndex = 31;
+            // 
             // RecipeDetailsControl
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label7);
-            Controls.Add(txtAlergens);
-            Controls.Add(label5);
-            Controls.Add(txtIngredients);
-            Controls.Add(txtDescription);
-            Controls.Add(label6);
-            Margin = new Padding(7, 8, 7, 8);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            Controls.Add(tableLayoutPanel1);
             Name = "RecipeDetailsControl";
-            Size = new Size(1846, 1093);
+            Size = new Size(800, 400);
+            tableLayoutPanel1.ResumeLayout(false);
+            tableLayoutPanel1.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -145,5 +156,6 @@
         private TextBox txtDescription;
         private TextBox txtIngredients;
         private Label label6;
+        private TableLayoutPanel tableLayoutPanel1;
     }
 }

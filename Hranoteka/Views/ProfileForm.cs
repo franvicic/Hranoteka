@@ -85,6 +85,22 @@ public partial class ProfileForm : Form, IProfileForm
         }
     }
 
+    public DialogResult ShowOpenFileDialog()
+    {
+        using (var openFileDialog = new OpenFileDialog())
+        {
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            var result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                SelectedFilePath = openFileDialog.FileName;
+            }
+            return result;
+        }
+    }
+
+    public string SelectedFilePath { get; private set; }
+
     public void ResetPasswords()
     {
         txtCurrentPassword.Text = string.Empty;
@@ -102,5 +118,8 @@ public partial class ProfileForm : Form, IProfileForm
         MessageBox.Show(message, "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 
-
+    public FileInfo CreateFileInfo(string fileName)
+    {
+        return new FileInfo(fileName);
+    }
 }
