@@ -2,6 +2,10 @@
 
 public interface IProfileForm : IForm
 {
+    event EventHandler SaveProfileEvent;
+    event EventHandler ChangePasswordEvent;
+    event EventHandler ChangeImageEvent;
+
     string Username { get; set; }
     string FirstName { get; set; }
     string LastName { get; set; }
@@ -13,7 +17,8 @@ public interface IProfileForm : IForm
 
     void ResetPasswords();
 
-    event EventHandler SaveProfileEvent;
-    event EventHandler ChangePasswordEvent;
-    event EventHandler ChangeImageEvent;
+    DialogResult ShowOpenFileDialog();
+    string SelectedFilePath { get; }
+
+    FileInfo CreateFileInfo(string fileName);
 }

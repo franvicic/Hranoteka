@@ -16,9 +16,10 @@ public partial class CommentsListControl : UserControl
         {
             Comment = comment.Text,
             Rating = comment.Rating.ToString(),
-            Username = comment.Author
+            Username = comment.Author.Username
         };
         commentItem.Top = currentCommentsTop;
+        commentItem.Left = 5;
         commentItem.Width = pnlContent.Width - 10;
         pnlContent.Controls.Add(commentItem);
         currentCommentsTop += commentItem.Height + 5;
@@ -30,7 +31,9 @@ public partial class CommentsListControl : UserControl
     {
         pnlContent.Controls.Clear();
         currentCommentsTop = 5;
-        pnlContent.Width = pnlBase.Width - 70;
+        pnlBase.Width = Width;
+        pnlContent.Width = pnlBase.Width - 50;
+        pnlContent.Height = currentCommentsTop + 5;
         foreach (var comment in comments)
         {
             AddComment(comment);

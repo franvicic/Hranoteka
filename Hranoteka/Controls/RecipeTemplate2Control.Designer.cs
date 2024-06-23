@@ -49,47 +49,41 @@
             // 
             // label3
             // 
-            label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(7, 456);
-            label3.Margin = new Padding(7, 0, 7, 0);
+            label3.Location = new Point(3, 167);
             label3.Name = "label3";
-            label3.Size = new Size(894, 46);
+            label3.Size = new Size(368, 17);
             label3.TabIndex = 66;
             label3.Text = "Priprema";
             label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // txtIngredients
             // 
-            txtIngredients.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            txtIngredients.Location = new Point(942, 508);
-            txtIngredients.Margin = new Padding(7, 5, 7, 5);
+            txtIngredients.Location = new Point(388, 186);
+            txtIngredients.Margin = new Padding(3, 2, 3, 2);
             txtIngredients.Multiline = true;
             txtIngredients.Name = "txtIngredients";
             txtIngredients.ScrollBars = ScrollBars.Vertical;
-            txtIngredients.Size = new Size(890, 414);
+            txtIngredients.Size = new Size(369, 154);
             txtIngredients.TabIndex = 65;
             // 
             // txtPreparation
             // 
-            txtPreparation.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            txtPreparation.Location = new Point(7, 508);
-            txtPreparation.Margin = new Padding(7, 5, 7, 5);
+            txtPreparation.Location = new Point(3, 186);
+            txtPreparation.Margin = new Padding(3, 2, 3, 2);
             txtPreparation.Multiline = true;
             txtPreparation.Name = "txtPreparation";
             txtPreparation.ScrollBars = ScrollBars.Vertical;
-            txtPreparation.Size = new Size(890, 414);
+            txtPreparation.Size = new Size(369, 154);
             txtPreparation.TabIndex = 64;
             // 
             // label11
             // 
-            label11.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(942, 965);
-            label11.Margin = new Padding(7, 0, 7, 0);
+            label11.Location = new Point(388, 350);
             label11.Name = "label11";
-            label11.Size = new Size(88, 46);
+            label11.Size = new Size(36, 19);
             label11.TabIndex = 62;
             label11.Text = "Kcal:";
             // 
@@ -97,21 +91,19 @@
             // 
             cmbCategory.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(459, 235);
-            cmbCategory.Margin = new Padding(7, 5, 7, 5);
+            cmbCategory.Location = new Point(189, 86);
+            cmbCategory.Margin = new Padding(3, 2, 3, 2);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(631, 53);
+            cmbCategory.Size = new Size(262, 25);
             cmbCategory.TabIndex = 60;
             // 
             // label9
             // 
-            label9.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             label9.AutoSize = true;
             label9.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(7, 970);
-            label9.Margin = new Padding(7, 0, 7, 0);
+            label9.Location = new Point(3, 352);
             label9.Name = "label9";
-            label9.Size = new Size(152, 46);
+            label9.Size = new Size(62, 19);
             label9.TabIndex = 59;
             label9.Text = "Alergeni:";
             // 
@@ -119,10 +111,10 @@
             // 
             picImage.BackColor = Color.FromArgb(192, 192, 0);
             picImage.Image = (Image)resources.GetObject("picImage.Image");
-            picImage.Location = new Point(7, 5);
-            picImage.Margin = new Padding(7, 5, 7, 5);
+            picImage.Location = new Point(3, 2);
+            picImage.Margin = new Padding(3, 2, 3, 2);
             picImage.Name = "picImage";
-            picImage.Size = new Size(413, 355);
+            picImage.Size = new Size(170, 130);
             picImage.SizeMode = PictureBoxSizeMode.StretchImage;
             picImage.TabIndex = 53;
             picImage.TabStop = false;
@@ -132,82 +124,76 @@
             btnLoadImage.BackColor = Color.DodgerBlue;
             btnLoadImage.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnLoadImage.ForeColor = Color.White;
-            btnLoadImage.Location = new Point(7, 372);
-            btnLoadImage.Margin = new Padding(7, 5, 7, 5);
+            btnLoadImage.Location = new Point(3, 136);
+            btnLoadImage.Margin = new Padding(3, 2, 3, 2);
             btnLoadImage.Name = "btnLoadImage";
-            btnLoadImage.Size = new Size(413, 82);
+            btnLoadImage.Size = new Size(170, 30);
             btnLoadImage.TabIndex = 57;
             btnLoadImage.Text = "Učitaj sliku";
             btnLoadImage.UseVisualStyleBackColor = false;
             // 
             // txtAlergens
             // 
-            txtAlergens.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             txtAlergens.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtAlergens.Location = new Point(7, 1022);
-            txtAlergens.Margin = new Padding(7, 5, 7, 5);
+            txtAlergens.Location = new Point(3, 371);
+            txtAlergens.Margin = new Padding(3, 2, 3, 2);
             txtAlergens.Name = "txtAlergens";
-            txtAlergens.Size = new Size(890, 53);
+            txtAlergens.Size = new Size(369, 26);
             txtAlergens.TabIndex = 58;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(459, 178);
-            label7.Margin = new Padding(7, 0, 7, 0);
+            label7.Location = new Point(189, 65);
             label7.Name = "label7";
-            label7.Size = new Size(179, 46);
+            label7.Size = new Size(73, 19);
             label7.TabIndex = 56;
             label7.Text = "Kategorija:";
             // 
             // txtRecipeName
             // 
-            txtRecipeName.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             txtRecipeName.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            txtRecipeName.Location = new Point(459, 55);
-            txtRecipeName.Margin = new Padding(7, 5, 7, 5);
+            txtRecipeName.Location = new Point(189, 20);
+            txtRecipeName.Margin = new Padding(3, 2, 3, 2);
             txtRecipeName.Name = "txtRecipeName";
-            txtRecipeName.Size = new Size(1374, 53);
+            txtRecipeName.Size = new Size(568, 26);
             txtRecipeName.TabIndex = 55;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(459, 0);
-            label6.Margin = new Padding(7, 0, 7, 0);
+            label6.Location = new Point(189, 0);
             label6.Name = "label6";
-            label6.Size = new Size(108, 46);
+            label6.Size = new Size(45, 19);
             label6.TabIndex = 54;
             label6.Text = "Naziv:";
             // 
             // label2
             // 
-            label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(942, 456);
-            label2.Margin = new Padding(7, 0, 7, 0);
+            label2.Location = new Point(388, 167);
             label2.Name = "label2";
-            label2.Size = new Size(896, 46);
+            label2.Size = new Size(369, 17);
             label2.TabIndex = 52;
             label2.Text = "Namirnice";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // nudKcal
             // 
-            nudKcal.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             nudKcal.Font = new Font("Segoe UI", 9.900001F, FontStyle.Regular, GraphicsUnit.Point);
-            nudKcal.Location = new Point(942, 1022);
+            nudKcal.Location = new Point(388, 371);
+            nudKcal.Margin = new Padding(1);
             nudKcal.Maximum = new decimal(new int[] { 100000, 0, 0, 0 });
             nudKcal.Name = "nudKcal";
-            nudKcal.Size = new Size(329, 51);
+            nudKcal.Size = new Size(135, 25);
             nudKcal.TabIndex = 67;
             // 
             // RecipeTemplate2Control
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Controls.Add(nudKcal);
             Controls.Add(label3);
             Controls.Add(txtIngredients);
@@ -222,9 +208,8 @@
             Controls.Add(txtRecipeName);
             Controls.Add(label6);
             Controls.Add(label2);
-            Margin = new Padding(7, 8, 7, 8);
             Name = "RecipeTemplate2Control";
-            Size = new Size(1846, 1093);
+            Size = new Size(760, 400);
             ((System.ComponentModel.ISupportInitialize)picImage).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudKcal).EndInit();
             ResumeLayout(false);

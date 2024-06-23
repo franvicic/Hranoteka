@@ -9,6 +9,14 @@ public partial class RecipeTemplate2Control : UserControl
     public RecipeTemplate2Control()
     {
         InitializeComponent();
+        btnLoadImage.Click += btnLoadImage_Click;
+    }
+
+    private int recipeId;
+    public int RecipeId
+    {
+        get { return recipeId; }
+        set { recipeId = value; }
     }
 
     public string RecipeName
@@ -17,10 +25,10 @@ public partial class RecipeTemplate2Control : UserControl
         set { txtRecipeName.Text = value; }
     }
 
-    public string SelectedCategory
+    public Category SelectedCategory
     {
-        get { return cmbCategory.SelectedText; }
-        set { cmbCategory.SelectedText = value; }
+        get { return cmbCategory.SelectedItem as Category; }
+        set { cmbCategory.SelectedItem = value; }
     }
 
     public int SelectedCategoryId
@@ -47,22 +55,50 @@ public partial class RecipeTemplate2Control : UserControl
         set { nudKcal.Value = value; }
     }
 
-    public List<string> Ingredients
+    public List<Ingredient> Ingredients
     {
         get
         {
-            return txtIngredients.Text.Split(new[] { Environment.NewLine }, StringSplitOptions.None).ToList();
+            List<Ingredient> ingredients = new List<Ingredient>();
+            var list = txtIngredients.Text
+                .Split(new[] { Environment.NewLine }, StringSplitOptions.None)
+                .ToList();
+            foreach ( var item in list)
+            {
+                ingredients.Add(new Ingredient { RecipeId = recipeId, Description = item });
+            }
+            return ingredients;
         }
         set
         {
-            txtIngredients.Text = value == null? null : string.Join(Environment.NewLine, value);
+            txtIngredients.Text = value == null 
+                ? null 
+                : string.Join(Environment.NewLine, value.Select(x => x.Description).ToList());
         }
     }
 
     public string ImagePath
     {
         get { return picImage.ImageLocation; }
-        set { picImage.ImageLocation = value; }
+        set
+        {
+            if (value != null)
+            {
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images", value);
+                if (File.Exists(imagePath))
+                {
+                    picImage.ImageLocation = imagePath;
+                }
+                else
+                {
+                    picImage.Image = Properties.Resources.undefined_recipe;
+                }
+            }
+            else
+            {
+                picImage.Image = Properties.Resources.undefined_recipe;
+            }
+        }
     }
 
     public List<Category> Categories

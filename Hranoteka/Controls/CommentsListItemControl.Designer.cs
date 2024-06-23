@@ -31,74 +31,70 @@
             lblUsername = new Label();
             label21 = new Label();
             lblRate = new Label();
-            label23 = new Label();
             lblComment = new Label();
+            label23 = new Label();
             SuspendLayout();
             // 
             // lblUsername
             // 
-            lblUsername.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             lblUsername.BackColor = Color.LightGray;
             lblUsername.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUsername.Location = new Point(632, 65);
+            lblUsername.Location = new Point(553, 74);
             lblUsername.Name = "lblUsername";
-            lblUsername.Size = new Size(84, 16);
+            lblUsername.Size = new Size(100, 26);
             lblUsername.TabIndex = 4;
             lblUsername.Text = "Jura";
             // 
             // label21
             // 
-            label21.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label21.BackColor = Color.LightGray;
-            label21.Location = new Point(632, 46);
+            label21.Location = new Point(553, 54);
             label21.Name = "label21";
-            label21.Size = new Size(84, 19);
+            label21.Size = new Size(100, 20);
             label21.TabIndex = 3;
             label21.Text = "Korisnik:";
             // 
             // lblRate
             // 
-            lblRate.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             lblRate.BackColor = Color.LightGray;
             lblRate.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRate.Location = new Point(632, 27);
+            lblRate.Location = new Point(553, 27);
             lblRate.Name = "lblRate";
-            lblRate.Size = new Size(84, 19);
+            lblRate.Size = new Size(100, 27);
             lblRate.TabIndex = 2;
             lblRate.Text = "6/5";
             // 
-            // label23
-            // 
-            label23.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            label23.BackColor = Color.LightGray;
-            label23.Location = new Point(632, 10);
-            label23.Name = "label23";
-            label23.Size = new Size(84, 17);
-            label23.TabIndex = 1;
-            label23.Text = "Ocjena:";
-            // 
             // lblComment
             // 
-            lblComment.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             lblComment.BackColor = Color.LightGray;
-            lblComment.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            lblComment.Location = new Point(10, 10);
+            lblComment.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblComment.Location = new Point(0, 0);
             lblComment.Name = "lblComment";
-            lblComment.Size = new Size(612, 71);
+            lblComment.Size = new Size(542, 100);
             lblComment.TabIndex = 0;
             lblComment.Text = "Odlična pizza! Volim je pripremati i teta Ana i Nikola su oduševljeni!";
             // 
-            // CommentListItemControl
+            // label23
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            label23.BackColor = Color.LightGray;
+            label23.Location = new Point(553, 0);
+            label23.Name = "label23";
+            label23.Size = new Size(100, 27);
+            label23.TabIndex = 6;
+            label23.Text = "Ocjena:";
+            // 
+            // CommentsListItemControl
+            // 
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Controls.Add(lblUsername);
-            Controls.Add(label21);
-            Controls.Add(lblComment);
-            Controls.Add(lblRate);
             Controls.Add(label23);
-            Name = "CommentListItemControl";
-            Size = new Size(730, 93);
+            Controls.Add(label21);
+            Controls.Add(lblRate);
+            Controls.Add(lblComment);
+            Name = "CommentsListItemControl";
+            Size = new Size(661, 103);
+            SizeChanged += CommentsListItemControl_SizeChanged;
             ResumeLayout(false);
         }
 
@@ -106,7 +102,7 @@
         private Label lblUsername;
         private Label label21;
         private Label lblRate;
-        private Label label23;
         private Label lblComment;
+        private Label label23;
     }
 }

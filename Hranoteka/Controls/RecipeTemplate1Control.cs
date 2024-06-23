@@ -17,16 +17,24 @@ public partial class RecipeTemplate1Control : UserControl
         throw new NotImplementedException();
     }
 
+    private int recipeId;
+    public int RecipeId
+    {
+        get { return recipeId; }
+        set { recipeId = value; }
+    }
+
+
     public string RecipeName
     {
         get { return txtRecipeName.Text; }
         set { txtRecipeName.Text = value; }
     }
 
-    public string SelectedCategory
+    public Category SelectedCategory
     {
-        get { return cmbCategory.SelectedText; }
-        set { cmbCategory.SelectedText = value; }
+        get { return cmbCategory.SelectedItem as Category; }
+        set { cmbCategory.SelectedItem = value; }
     }
 
     public int SelectedCategoryId
@@ -56,17 +64,35 @@ public partial class RecipeTemplate1Control : UserControl
     public string ImagePath
     {
         get { return picImage.ImageLocation; }
-        set { picImage.ImageLocation = value; }
+        set
+        {
+            if (value != null)
+            { 
+                string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images", value);
+                if (File.Exists(imagePath))
+                {
+                    picImage.ImageLocation = imagePath;
+                }
+                else
+                {
+                    picImage.Image = Properties.Resources.undefined_recipe;
+                }
+            }
+            else
+            {
+                picImage.Image = Properties.Resources.undefined_recipe;
+            }
+        }
     }
 
-    public List<string> Ingredients
+    public List<Ingredient> Ingredients
     {
         get
         {
-            var ingredients = new List<string>();
+            var ingredients = new List<Ingredient>();
             foreach (var item in lstIngredients.Items)
             {
-                ingredients.Add(item.ToString());
+                ingredients.Add(new Ingredient { Description = item.ToString()});
             }
             return ingredients;
         }
@@ -121,7 +147,9 @@ public partial class RecipeTemplate1Control : UserControl
         }
 
         lstIngredients.Items.Add($"{txtIngredientName.Text} - {nudAmount.Value} {cmbUnit.Text}");
+        // reset
         txtIngredientName.Text = "";
+        nudAmount.Value = 0;
     }
 
 }

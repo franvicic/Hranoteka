@@ -281,6 +281,26 @@ public partial class EditRecipeForm : Form, IEditRecipeForm
         MessageBox.Show(message, "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 
+    public DialogResult ShowOpenFileDialog()
+    {
+        using (var openFileDialog = new OpenFileDialog())
+        {
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;";
+            var result = openFileDialog.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                SelectedFilePath = openFileDialog.FileName;
+            }
+            return result;
+        }
+    }
+
+    public string SelectedFilePath { get; private set; }
+
+    public FileInfo CreateFileInfo(string fileName)
+    {
+        return new FileInfo(fileName);
+    }
     private void ResetFields()
     {
         recipeId = 0;

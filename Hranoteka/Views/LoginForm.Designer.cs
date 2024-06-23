@@ -51,18 +51,18 @@
             pnlBase.Controls.Add(txtUsername);
             pnlBase.Controls.Add(label1);
             pnlBase.Controls.Add(label2);
-            pnlBase.Location = new Point(12, 11);
+            pnlBase.Location = new Point(12, 12);
             pnlBase.Margin = new Padding(3, 2, 3, 2);
             pnlBase.Name = "pnlBase";
-            pnlBase.Size = new Size(332, 370);
+            pnlBase.Size = new Size(322, 404);
             pnlBase.TabIndex = 1;
             // 
             // label4
             // 
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(21, 301);
+            label4.Location = new Point(20, 329);
             label4.Name = "label4";
-            label4.Size = new Size(294, 25);
+            label4.Size = new Size(286, 27);
             label4.TabIndex = 7;
             label4.Text = "Novi korisnik?";
             label4.TextAlign = ContentAlignment.MiddleCenter;
@@ -71,7 +71,7 @@
             // 
             lnkGoToRegistration.AutoSize = true;
             lnkGoToRegistration.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lnkGoToRegistration.Location = new Point(116, 328);
+            lnkGoToRegistration.Location = new Point(113, 359);
             lnkGoToRegistration.Margin = new Padding(3, 2, 3, 2);
             lnkGoToRegistration.Name = "lnkGoToRegistration";
             lnkGoToRegistration.Size = new Size(99, 21);
@@ -84,10 +84,10 @@
             btnLogin.BackColor = Color.DodgerBlue;
             btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(123, 179);
+            btnLogin.Location = new Point(120, 196);
             btnLogin.Margin = new Padding(3, 2, 3, 2);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(82, 38);
+            btnLogin.Size = new Size(80, 42);
             btnLogin.TabIndex = 5;
             btnLogin.Text = "Prijava";
             btnLogin.UseVisualStyleBackColor = false;
@@ -95,29 +95,29 @@
             // txtPassword
             // 
             txtPassword.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPassword.Location = new Point(21, 142);
+            txtPassword.Location = new Point(20, 155);
             txtPassword.Margin = new Padding(3, 2, 3, 2);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(294, 29);
+            txtPassword.Size = new Size(286, 29);
             txtPassword.TabIndex = 4;
             // 
             // label3
             // 
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(21, 118);
+            label3.Location = new Point(20, 129);
             label3.Name = "label3";
-            label3.Size = new Size(294, 25);
+            label3.Size = new Size(286, 27);
             label3.TabIndex = 3;
             label3.Text = "Lozinka:";
             // 
             // txtUsername
             // 
             txtUsername.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtUsername.Location = new Point(21, 79);
+            txtUsername.Location = new Point(20, 86);
             txtUsername.Margin = new Padding(3, 2, 3, 2);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(294, 29);
+            txtUsername.Size = new Size(286, 29);
             txtUsername.TabIndex = 2;
             // 
             // label1
@@ -128,7 +128,7 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(332, 40);
+            label1.Size = new Size(322, 44);
             label1.TabIndex = 0;
             label1.Text = "Prijavite se";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -136,17 +136,17 @@
             // label2
             // 
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(21, 55);
+            label2.Location = new Point(20, 60);
             label2.Name = "label2";
-            label2.Size = new Size(294, 25);
+            label2.Size = new Size(286, 27);
             label2.TabIndex = 1;
             label2.Text = "Korisničko ime:";
             // 
             // LoginForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(359, 393);
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
+            ClientSize = new Size(349, 430);
             Controls.Add(pnlBase);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;

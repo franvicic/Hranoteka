@@ -38,8 +38,7 @@
             // 
             // lblAuthor
             // 
-            lblAuthor.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
-            lblAuthor.BackColor = Color.FromArgb(255, 224, 192);
+            lblAuthor.BackColor = Color.FromArgb(255, 192, 128);
             lblAuthor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblAuthor.Location = new Point(439, 9);
             lblAuthor.Name = "lblAuthor";
@@ -50,8 +49,7 @@
             // 
             // lblTitle
             // 
-            lblTitle.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            lblTitle.BackColor = Color.FromArgb(255, 224, 192);
+            lblTitle.BackColor = Color.FromArgb(255, 192, 128);
             lblTitle.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitle.Location = new Point(105, 9);
             lblTitle.Name = "lblTitle";
@@ -74,7 +72,6 @@
             // 
             // btnOpenRecipe
             // 
-            btnOpenRecipe.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             btnOpenRecipe.BackColor = Color.DodgerBlue;
             btnOpenRecipe.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnOpenRecipe.ForeColor = Color.White;
@@ -88,8 +85,8 @@
             // 
             // RecipesListItemControl
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Controls.Add(btnOpenRecipe);
             Controls.Add(lblAuthor);
             Controls.Add(lblTitle);

@@ -5,6 +5,8 @@ public partial class RateControl : UserControl
     public RateControl()
     {
         InitializeComponent();
+
+        btnSaveCommentAndRate.Click += btnSaveCommentAndRate_Click;
     }
 
     public int Rating

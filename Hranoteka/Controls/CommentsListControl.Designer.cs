@@ -29,46 +29,57 @@
         private void InitializeComponent()
         {
             pnlBase = new Panel();
-            pnlContent = new Panel();
+            pnlContent = new FlowLayoutPanel();
+            label1 = new Label();
             pnlBase.SuspendLayout();
             SuspendLayout();
             // 
             // pnlBase
             // 
             pnlBase.AutoScroll = true;
-            pnlBase.BackColor = Color.DodgerBlue;
+            pnlBase.BackColor = Color.FromArgb(255, 224, 192);
             pnlBase.Controls.Add(pnlContent);
+            pnlBase.Controls.Add(label1);
             pnlBase.Dock = DockStyle.Fill;
             pnlBase.Location = new Point(0, 0);
-            pnlBase.Margin = new Padding(7, 5, 7, 5);
+            pnlBase.Margin = new Padding(3, 2, 3, 2);
             pnlBase.Name = "pnlBase";
-            pnlBase.Size = new Size(1846, 1093);
+            pnlBase.Size = new Size(760, 400);
             pnlBase.TabIndex = 22;
             // 
             // pnlContent
             // 
-            pnlContent.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pnlContent.BackColor = Color.Blue;
-            pnlContent.Location = new Point(12, 16);
-            pnlContent.Margin = new Padding(7, 5, 7, 5);
+            pnlContent.BackColor = Color.Transparent;
+            pnlContent.Location = new Point(5, 5);
             pnlContent.Name = "pnlContent";
-            pnlContent.Size = new Size(1816, 0);
-            pnlContent.TabIndex = 0;
+            pnlContent.Size = new Size(690, 11);
+            pnlContent.TabIndex = 32;
+            // 
+            // label1
+            // 
+            label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(5, 19);
+            label1.Name = "label1";
+            label1.Size = new Size(748, 26);
+            label1.TabIndex = 31;
+            label1.Text = "no comment";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // CommentsListControl
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             Controls.Add(pnlBase);
-            Margin = new Padding(7, 8, 7, 8);
             Name = "CommentsListControl";
-            Size = new Size(1846, 1093);
+            Size = new Size(760, 400);
             pnlBase.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
         private Panel pnlBase;
-        private Panel pnlContent;
+        private Label label1;
+        private FlowLayoutPanel pnlContent;
     }
 }

@@ -27,4 +27,13 @@ public partial class CommentsListItemControl : UserControl
         get { return lblUsername.Text; }
         set { lblUsername.Text = value; }
     }
+
+    private void CommentsListItemControl_SizeChanged(object sender, EventArgs e)
+    {
+        //lblComment.Width = this.Width - 210;
+        //label23.Left = this.Width - 200;
+        //label21.Left = this.Width - 200;
+        //lblRate.Left = this.Width - 200;
+        //lblUsername.Left = this.Width - 200;
+    }
 }
