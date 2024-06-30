@@ -62,7 +62,7 @@ public partial class RecipeDetailsForm : Form, IRecipeDetailsForm
         get { return picRecipe.ImageLocation; }
         set 
         {
-            string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images", value);
+            string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "images", value ?? "");
             if (File.Exists(imagePath))
             {
                 picRecipe.ImageLocation = imagePath;
