@@ -1,6 +1,6 @@
 ﻿namespace Hranoteka
 {
-    partial class Form1
+    partial class FormTin
     {
         /// <summary>
         ///  Required designer variable.

@@ -1,8 +1,8 @@
 namespace Hranoteka
 {
-    public partial class Form1 : Form
+    public partial class FormTin : Form
     {
-        public Form1()
+        public FormTin()
         {
             InitializeComponent();
         }
